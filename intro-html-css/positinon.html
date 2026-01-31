@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>position</title>
+  </head>
+  <!-- position has 4 properties we can use them to move the element .
+   1-top : we set a pixel to control the distace between the top edge elements and its container يعني بعد العنصر عن الصفحه كامله من فوق 
+   2- left : it controls the left side of the element and and its container . نفس الهرجه اللهم من اليسار 
+   3- right + 4- bottom .IF we set them in opposit direction("left+right" , " bottom+top") the element will STRECH -->
+
+  <!-- position: fixed = mean it no longer thake the whole space  
+     of the page because it's sort of "floating "above the page meaning (placed in the broeser)  بمعنى انه بيجلس ثابت لما نحرك الصفحه لانه على البراوزر نفسه مو الصفحه-->
+
+  <!-- position:staitc = mean nothing never change -->
+
+  <!-- position:absolute = the same thing BUT it place on the PAGE  هذا العكس  يعني هو بتحرك مع الصفحه نفسها اذا طلع طلع واذا نزلت نزل
+       +
+  z-index =  determines which elements appear in the front and which elements appear in the behind .
+   the element with a higher Z"5" will apear in front the element with lower Z"2" [ position:absolute]-->
+
+
+  <body style="height: 3000px; padding-top: 50px; padding-left: 80px">
+    <div
+      style="
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        position: fixed;
+        top: 0px;
+        right: 0;
+        left: 0;
+        height: 50px;
+      "
+    >
+      header
+    </div>
+    <div
+      style="
+        background-color: rgb(138, 127, 255);
+        color: white;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        bottom: 0;
+        width: 72px;
+      "
+    >
+      sidebar
+    </div>
+<div
+      style="
+        background-color: rgb(255, 127, 127);
+        color: white;
+        position: absolute;
+        top:15px;
+        left:10px;
+        z-index: 1;
+      
+      "
+    >
+      absolute
+    </div>
+
+
+    <div
+      style="
+        background-color: rgb(235, 0, 0);
+        color: white;
+        position: absolute;
+        top:15px;
+        left:50px;
+        z-index: 0;
+      
+      "
+    >
+      absolute
+    </div>
+    </div>
+    <div style="background-color: aquamarine; height: 200px; width: 200px">
+      div1
+    </div>
+    <div style="background-color: chartreuse; height: 200px; width: 200px">
+      div2
+    </div>
+  </body>
+</html>

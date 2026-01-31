@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .row-x {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      .image-x {
+        width: 55px;
+        height: 55px;
+        border-radius: 30px;
+        margin-right: 15px;
+      }
+      .info-x {
+        width: 200px;
+      }
+      .name-x {
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+      .handle-x {
+        font-size: 13px;
+        margin-bottom: 3px;
+        color: grey;
+      }
+      .cat-x {
+        font-size: 12px;
+        color: grey;
+      }
+      .follow-x {
+        background-color: rgb(0, 191, 255);
+        border: none;
+        color: aliceblue;
+        font-size: 18px;
+        border-radius: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+      }
+      .row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      .image{
+        height: 55px;
+        width: 55px;
+        border-radius: 30px;
+        margin-right: 15px;
+      }
+      .info{
+       width: 200px;
+      }
+      .text1{
+        font-weight: bolder;
+        margin-bottom: 3px;
+      }
+      .text2{
+        font-size: 13px;
+        color: grey;
+        margin-bottom: 3px;
+      }
+      .text3{
+        font-size: 12px;
+        color: grey;
+      }
+      .follow{
+        background-color: rgb(0, 191, 255);
+        border: none;
+        border-radius: 3px;
+        color: aliceblue;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row-x">
+      <img
+        class="image-x"
+        src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1200"
+      />
+
+      <div class="info-x">
+        <p class="name-x">oliver<p>
+        <p class="handle-x">the cat</p>
+        <p class="cat-x">popular</p>
+      </div>
+
+      <button class="follow-x">follow</button>
+    </div>
+
+    <div class="row">
+<img class="image"    src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1200"
+></img>
+<div class="info">
+    <p class="text1">text1<p>
+    <p class="text2">text2</p>
+    <p class="text3">text3</p>
+</div>
+
+<button class="follow">follow</button>
+
+    </div>
+    <!--   <div style="display: flex; flex-direction: row; margin-bottom: 30px">
+      <div style="background-color: rgb(62, 35, 61)">div1</div>
+      <div style="background-color: rgb(222, 33, 134)">div2 dkkkdk</div>
+      <div style="background-color: rgb(91, 25, 244)">
+        div3
+        <p>dd</p>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row">
+      <div style="background-color: rgb(62, 35, 61); width: 100px">100px</div>
+      <div style="background-color: rgb(222, 33, 134); flex: 1">
+        div2 flx 1jj
+      </div>
+      <div style="background-color: rgb(91, 25, 244)">
+        div3
+        <p>bb</p>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; margin-top: 100px">
+      <div style="background-color: rgb(62, 35, 61); width: 100px">100px</div>
+
+      <div style="background-color: rgb(222, 33, 134); flex: 1">div2 flx 1</div>
+
+      <div style="background-color: rgb(91, 25, 244); flex: 2">
+        div3
+        <p>flex 2</p>
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        height: 70px;
+        border: 4px;
+        border-style: solid;
+        border-color: rgb(0, 255, 76);
+        justify-content: center;
+      "
+    >
+      <div style="background-color: rgb(62, 35, 61); width: 100px">100px</div>
+
+      <div style="background-color: rgb(222, 33, 134); width: 100px">
+        div2 100px
+      </div>
+
+      <div style="background-color: rgb(91, 25, 244); width: 100px">
+        div3 100px
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        height: 70px;
+        border: 4px;
+        border-style: solid;
+        border-color: rgb(0, 255, 76);
+        justify-content: space-between;
+      "
+    >
+      <div style="background-color: rgb(62, 35, 61); width: 100px">100px</div>
+
+      <div style="background-color: rgb(222, 33, 134); width: 100px">
+        div2 100px
+      </div>
+
+      <div style="background-color: rgb(91, 25, 244); width: 100px">
+        div3 100px
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        height: 70px;
+        border: 4px;
+        border-style: solid;
+        border-color: rgb(0, 255, 76);
+        justify-content: space-between;
+        align-items: center;
+      "
+    >
+      <div style="background-color: rgb(62, 35, 61); width: 100px">100px</div>
+
+      <div style="background-color: rgb(222, 33, 134); width: 100px">
+        div2 100px
+      </div>
+
+      <div style="background-color: rgb(91, 25, 244); width: 100px">
+        div3 100px
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; margin-bottom: 30px">
+      <div style="background-color: rgb(62, 35, 61)">div1</div>
+      <div style="background-color: rgb(222, 33, 134)">div2 dkkkdk</div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; margin-bottom: 100px">
+      <div style="background-color: rgb(251, 190, 202); width: 200px">
+        200px
+      </div>
+      <div style="background-color: rgb(155, 251, 219); width: 75px">75px</div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; margin-bottom: 100px">
+      <div style="background-color: hotpink; width: 50px">50px</div>
+      <div style="background-color: cyan; flex: 1">flex</div>
+      <div style="background-color: darkseagreen; width: 75px">75px</div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 100px;
+      "
+    >
+      <div style="background-color: blueviolet">item1</div>
+      <div style="background-color: aquamarine">item2</div>
+      <div style="background-color: rgb(207, 207, 255)">item3</div>
+      <div style="background-color: rgb(228, 255, 202)">item4</div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        border: 4px;
+        border-style: solid;
+        border-color: rgb(135, 135, 135);
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+      "
+    >
+      <div style="background-color: blueviolet">item1********************</div>
+      <div style="background-color: rgb(249, 171, 143)">item2************</div>
+    </div>
+   ************************************************************* -->
+  </body>
+</html>
